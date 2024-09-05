@@ -1,7 +1,7 @@
 {
   "name": "Treino de Calistenia",
   "short_name": "Treino",
-  "start_url": "/",
+  "start_url": "https://riscadin.github.io/Treininho-Meu/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ff6347",
