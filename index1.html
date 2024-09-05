@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <title>Treino de Calistenia do Ricardo</title>
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+.timer {
+  font-size: 48px;
+  margin: 20px 0;
+  color: #ff6347;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6347;
+  color: #fff;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #ff4500;
+}
+.controls button, #stop-alarm-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6347;
+    color: #fff;
+    cursor: pointer;
+}
+
+.controls button:hover, #stop-alarm-btn:hover {
+    background-color: #0a6cff;
+}
+
+#stop-alarm-btn {
+    display: none;
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Treino do Ricardo</h1>
+        <h2 id="exercise-name">Polichinelo</h2>
+        <div class="timer" id="timer">60</div>
+        <div class="controls">
+            <button id="start-btn">Iniciar</button>
+            <button id="pause-btn">Pausar</button>
+            <button id="reset-btn">Resetar</button>
+        </div>
+        <button id="stop-alarm-btn" style="display: none;">Parar Alarme</button>
+    </div>
+    <audio id="alarm-sound" src="i.mp3"></audio>
+
+    <script src="script.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+    console.log('Service Worker registered with scope:', registration.scope);
+  }).catch(function(error) {
+    console.log('Service Worker registration failed:', error);
+  });
+}
+
+    </script>
+</body>
+</html>

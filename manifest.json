@@ -1,0 +1,20 @@
+{
+  "name": "Treino de Calistenia",
+  "short_name": "Treino",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6347",
+  "icons": [
+    {
+      "src": "essss.jpeg",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "essss.jpeg",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
